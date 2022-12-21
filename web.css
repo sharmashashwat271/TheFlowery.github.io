@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Montserrat:wght@700&family=PT+Serif&family=Poppins&family=Roboto&family=Squada+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html{
+
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
+}
+.navbar{
+    display: flex ;
+    align-items:center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+
+
+}
+video{
+  height:466px;
+  border-radius: 320px 10px;
+  /* width:500px; */
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: rgb(151, 21, 21);
+}
+p{
+    color: #555;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    /* flex-basis: 50%; */
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+    /* padding: 50px 0; */
+}
+.col-2 h1{
+    font-size: 50px;
+    font-family: 'Roboto';
+
+    line-height: 60px;
+    margin: 25px 0;
+}
+.btn-explore{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: #ff523b;
+   height:50px;
+   color: #fff;
+   font-size: 22px;
+   padding: 8px 30px;
+   width:200px;
+   font-family: 'Roboto';
+   margin: 30px 0;
+   border-radius: 30px;
+   transition: background 0.5s;
+}
+.btn-explore:hover
+{
+  background: #563434;
+}
+.header{
+     background-color: #E4F9F5;
+     height:100vh;
+}
+.header .row{
+    margin-top: 50px;
+}
+.header .row p{
+  width:300px;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+.categories{
+  margin: 70px 30px;
+}
+.col-3{
+  flex-basis: auto;
+  min-width: 250px;
+  margin-bottom: 30px;
+}
+.col-3 img{
+  width: 100%;
+}
+.col-4{
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+  transition: transform 0.5s;
+}
+.col-4 img{
+  width: 100%;
+}
+.title{
+  text-align: center;
+  margin: 0 auto 80px auto;
+  color: #555;
+  font-weight: bold;
+}
+h4{
+  color: #555;
+  font-weight: normal;
+}
+.col-4 p{
+  font-size: 20px;
+}
+.col-4:hover{
+  transform: translateY(-5px);
+}
+.review-title{
+  color: #555;
+text-align: center;
+margin-bottom: 50px;
+}
+.review{
+  padding-top: 100px;
+}
+.col-3{
+  flex-basis: 33.33%;
+  padding: 40px 20px;
+  margin-bottom: 50px;
+  box-shadow: 0 0 20px 0;
+  cursor: pointer;
+  transition: transform 0.5s;
+  font-size: 20px;
+  color: #777;
+}
+.col-3 h3{
+  font-weight: 600;
+  color: #555;
+  font-size: 22px;
+}
+.col-3:hover{
+  transform: translateY(-10px);
+}
+.brands{
+margin: 100px auto;
+}
+.brands .col-4{
+  width: 100px;
+}
+.brands .col-4 img{
+  width: 80%;
+  height: 85px;
+  cursor: pointer;
+  filter: grayscale(100%);
+}
+.brands .col-4 img:hover{
+  filter: grayscale(0);
+}
+.footer{
+  background: #000;
+  color: #8a8a8a;
+  font-size: 14px;
+  padding: 60px 0 20px;
+  flex: 25%;
+  text-align: center;
+}
+.footer-col-4 img{
+  width: 100%;
+  height: 30px;
+  width: 30px;
+}
+.footer p{
+  color: #8a8a8a;
+}
+.footer h3{
+  color: #fff;
+  margin-bottom: 20px;
+}
+.footer h2{
+  color: #fff;
+  margin-bottom: 20px;
+}
+ul{
+  list-style-type: none;
+}
+.app-logo{
+  margin-top: 20px;
+}
+.app-logo img{
+  width: 140px;
+}
+.menu-icon{
+  width: 28px;
+  margin-left: 20px;
+  display: none;
+}
+@media only screen and (max-width: 800px){
+  nav ul{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: #333;
+    width: 100%;
+    margin-top: 30px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+  nav ul li a{
+    color: #fff;
+  }
+  .menu-icon{
+    display: block;
+    cursor: pointer;
+  }
+}
+/* -----------all product page---------- */
+.row-2{
+  justify-content: space-between;
+  margin: 100px auto 50px;
+}
+select{
+  border: 1px solid #2d8563;
+  padding: 5px;
+}
+select :focus{
+  outline: none;
+}
+.page-btn{
+  margin: 0 auto 80px;
+}
+.page-btn span{
+  display: inline-block;
+  border: 1px solid #1717c6;
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  text-align:center;
+  line-height: 40px;
+  cursor: pointer;
+}
+.page-btn span:hover{
+  background: #1717c6;
+  color: #fff;
+}
+/* ----------single product detail--------- */
+.single-product{
+  margin-top: 80px;
+}
+.single-product .col-2 img{
+  padding: 0;
+}
+.single-product .col-2{
+  padding: 20px;
+}
+.single-product h4{
+  margin: 20px 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+.single-product select{
+  display: block;
+  padding:10px;
+  margin-top: 20px;
+}
+.single-product input{
+  width: 50px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 20px;
+  margin-right: 10px;
+  border: 1px solid #1717c6 ;
+}
+input:focus{
+  outline: none;
+}
+.video-container{
+  flex:1 1 40rem;
+  position: relative;
+  height: 25%;
+}
+
+.video-container video{
+  width:500px;
+  border:1.5rem solid #fff;
+  border-radius: .5rem;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  height: 500px;
+  object-fit: cover;
+  align-items: center;
+  /* margin-right: 153px; */
+}
+.mid .row{
+flex-basis: 50%
+}
+.mid .row .col-2 h2{
+  font-size: 35px;
+}
+.mid .row .col-2 p{
+  font-size: 23px;
+}
+.video-container h3{
+  position: absolute;
+  top:50%; transform: translateY(-50%);
+  font-size: 3rem;
+  background:#fff;
+  width:98%;
+  padding:1rem 2rem;
+  text-align: center;
+  mix-blend-mode: screen;
+}
+
+.account-page{
+  padding: 50px 0;
+}
+.form-container{
+  background: #fff;
+  width: 300px;
+  height: 400px;
+  position: relative;
+  text-align: center;
+  padding: 20px 0;
+  margin: auto;
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+.form-container span{
+  font-weight: bold;
+  padding: 0 10px;
+  color: #555;
+  cursor: pointer;
+  width: 100px;
+  display: inline-block;
+}
+.form-btn{
+  display: inline-block;
+}
+.form-container form{
+  max-width: 300px;
+  padding: 0 20px;
+  position: absolute;
+  top: 130px;
+  transition: transform 1s;
+}
+form input{
+  width: 100%;
+  height: 30px;
+  margin: 10px 0;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+}
+form .btn-explore{
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  margin: 10px 0;
+}
+#LoginForm{
+  left: -300px;
+}
+#RegForm{
+  left: 0;
+}
+#Indicator{
+  width: 100px;
+  border: none;
+  background: #ff523b;
+  height: 3px;
+  margin-top: 8px;
+  transform: translateX(100px);
+  transition: transform 1s;
+}
+
+/*----media query for less than 600 screen size-------*/
+@media only screen and (max-width: 600px){
+  .row{
+    text-align: center;
+  }
+  .col-2, .col-3, .col-4{
+    flex-basis: 100%;
+  }
+}

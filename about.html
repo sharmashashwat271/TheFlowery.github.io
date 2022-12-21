@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Flower Company | About Us</title>
+    <hr>
+    <link rel="stylesheet" href="web.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+          <div class="logo">
+            <img src="images/logo.png" alt="logo-img" width="135px">
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="tec.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="account.html">Account</a></li>
+            </ul>
+          </nav>
+         <a href="cart.html"> <img src="images/cart.png" alt="cart-img" width="30px" height="30px"></a>
+          <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+          </div>
+    </div>
+    <div class="row">
+      <div class="col-2">
+        <h1>The Flower Company</h1>
+        <hr>
+        <br> <br>
+        <p>
+          The Flower Company has been hand-delivering premium floral <br>
+           arrangements and gift baskets to help strengthen relationships, give love and <br> support,
+            and celebrate life’s special moments. From birthdays to anniversaries <br> to
+             commemorating a loved one, and every little “just because” moment in between.
+             <br> <br> <br>
+<p>
+With <strong> FREE* Same Day Delivery , </strong>  we are dedicated to helping you
+find the <br> perfect flowers to deliver your message and enhance your special occasion. <br>
+ Our stunning arrangements will allow nature’s beauty to inspire your special moment. <br>
+ And because we are a local florist dedicated to your satisfaction, you can always expect <br>
+ your needs to be treated with all the attention to detail they deserve.
+</p> <br>
+<h3>Expertly Crafted, Hand-Delivered</h3>
+        <a href="tec.html" class="btn-explore">Explore Now</a>
+
+       </div>
+       <div class="col-2">
+        <video loop autoplay muted>
+          <source src="images/mixkit-blooming-rose-flower-in-the-branch-28820-medium.mp4" type="video/mp4">
+        </video>
+       </div>
+
+  </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h2>Download Our App</h2>
+            <p>Download App for Android and ios mobile phones.</p>
+            <div class="app-logo">
+              <img src="images/g-play-logo.jpg" alt="">
+              <img src="images/app-store-logo.png" alt="">
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="images/logo.png" alt="">
+            <p><strong>Buying local matters. <br /> The Flower Comapny is committed to
+            strengthening relationships by helping <br /> local florists market, sell,
+             and deliver their floral designs online.</strong></p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Posts</li>
+              <li>Return Policy</li>
+              <li>Join Affliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow Us</h3>
+            <ul>
+              <li> <img src="images/fb-logo.webp" alt=""> </li>
+              <li> <img src="images/instagram-logo.webp" alt=""> </li>
+              <li> <img src="images/twitter-logo.png" alt=""> </li>
+              <li> <img src="images/yt-logo.png" alt=""> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---js for toggle menu------------>
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        }
+        else {
+          MenuItems.style.maxHeight = "0px";
+        }
+
+      }
+    </script>
+    </body>
+    </html>
+
+
+  </body>
+</html>
